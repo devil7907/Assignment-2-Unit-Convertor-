@@ -27,8 +27,8 @@ public class result extends AppCompatActivity {
     }
 
     private void showresult() {
-        Intent intent = getIntent();
-        int score=Integer.parseInt(intent.getStringExtra("value"));
-        txt.setText(score);
+        Intent intent1=getIntent();
+        int temp=intent1.getIntExtra("score",0);
+        txt.setText(temp);
     }
 }

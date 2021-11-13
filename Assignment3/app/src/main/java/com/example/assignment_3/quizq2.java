@@ -32,10 +32,12 @@ public class quizq2 extends AppCompatActivity {
     }
 
     private void gotonextq() {
-
-
-        Intent intent1= new Intent(this, result.class);
-        startActivity(intent1);
+        Intent intent1=getIntent();
+        int temp=intent1.getIntExtra("value",0);
+        temp=temp+1;
+        Intent intent= new Intent(this, result.class);
+        intent.putExtra("score", temp);
+        startActivity(intent);
     }
 
     private void gobck() {
