@@ -44,6 +44,12 @@ public class practice extends AppCompatActivity {
                 gotoq3();
         }
         });
+        practiceq4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoq4();
+            }
+        });
 
         backbtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,6 +57,11 @@ public class practice extends AppCompatActivity {
                 goback();
             }
         });
+    }
+
+    private void gotoq4() {
+        Intent intent=new Intent(this,practiceq4.class);
+        startActivity(intent);
     }
 
     private void gotoq3() {
