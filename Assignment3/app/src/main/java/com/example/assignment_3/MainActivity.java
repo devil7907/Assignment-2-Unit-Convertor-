@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                gotorgepositry("https://www.google.com");
+                gotorgepositry("https://github.com/devil7907/Assignment-2-Unit-Convertor-");
 
             }
         });

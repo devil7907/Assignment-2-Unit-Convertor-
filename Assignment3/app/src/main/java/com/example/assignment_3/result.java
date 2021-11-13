@@ -30,6 +30,6 @@ public class result extends AppCompatActivity {
         Intent intent1=getIntent();
         int temp=intent1.getIntExtra("score",0);
 
-        txt.setText(1);
+        txt.setText("1");
     }
 }
