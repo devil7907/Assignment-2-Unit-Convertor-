@@ -15,8 +15,8 @@ public class practice extends AppCompatActivity {
         setContentView(R.layout.activity_practice);
 
         practiceq1=findViewById(R.id.button9);
-        practiceq2=findViewById(R.id.button10);
-        practiceq3=findViewById(R.id.button11);
+        practiceq2=findViewById(R.id.button11);
+        practiceq3=findViewById(R.id.button10);
         practiceq4=findViewById(R.id.button12);
         practiceq5=findViewById(R.id.button13);
         practiceq6=findViewById(R.id.button14);
@@ -30,12 +30,37 @@ public class practice extends AppCompatActivity {
                 gotoq1();
             }
         });
+
+        practiceq2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoq2();
+            }
+        });
+        practiceq3.setOnClickListener(new View.OnClickListener(){
+        @Override
+                public void onClick(View v)
+        {
+                gotoq3();
+        }
+        });
+
         backbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 goback();
             }
         });
+    }
+
+    private void gotoq3() {
+        Intent intent=new Intent(this, practiceq3.class);
+        startActivity(intent);
+    }
+
+    private void gotoq2() {
+        Intent intent=new Intent(this,practiceq2.class);
+        startActivity(intent);
     }
 
     private void gotoq1() {
