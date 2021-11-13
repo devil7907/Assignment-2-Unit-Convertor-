@@ -52,7 +52,6 @@ public class quiz extends AppCompatActivity  {
         btn4=findViewById(R.id.button7);
 
 
-        txt=findViewById(R.id.textView);
 
     }
 

@@ -7,10 +7,20 @@
     tools:context=".quiz">
 
     <Button
+        android:id="@+id/button26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginBottom="56dp"
+        android:text="Quit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
         android:id="@+id/button4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="html"
+        android:text="Lahatiyah"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -22,7 +32,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="css"
+        android:text="Halqiyah"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,7 +43,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="js"
+        android:text="Shajariyah-Haafiyah"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,17 +62,6 @@
         app:layout_constraintVertical_bias="0.042" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-
-        android:text="Which is best Language?"
-        android:textColor="#1C1B1B"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="194dp" />
-
-    <TextView
         android:id="@+id/textView5"
         android:layout_width="match_parent"
         android:layout_height="100dp"
@@ -73,5 +72,24 @@
         android:textStyle="bold"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="32dp" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="207dp"
+        android:layout_height="192dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/qq1"
+        tools:layout_editor_absoluteY="140dp" />
+
+    <Button
+        android:id="@+id/button25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="56dp"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
