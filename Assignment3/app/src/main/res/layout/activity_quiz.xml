@@ -70,8 +70,8 @@
         android:textColor="#132DBC"
         android:textSize="25sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="32dp" />
+        app:layout_constraintBottom_toTopOf="@+id/imageView10"
+        tools:layout_editor_absoluteX="0dp" />
 
     <ImageView
         android:id="@+id/imageView10"
@@ -79,8 +79,8 @@
         android:layout_height="192dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:srcCompat="@drawable/qq1" />
+        app:srcCompat="@drawable/qq1"
+        tools:layout_editor_absoluteY="132dp" />
 
     <Button
         android:id="@+id/button25"

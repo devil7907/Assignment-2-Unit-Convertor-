@@ -17,7 +17,7 @@ public class result extends AppCompatActivity {
         setContentView(R.layout.activity_result);
 
         result=findViewById(R.id.button32);
-        txt=findViewById(R.id.textView);
+        txt=findViewById(R.id.textView7);
         result.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -29,6 +29,7 @@ public class result extends AppCompatActivity {
     private void showresult() {
         Intent intent1=getIntent();
         int temp=intent1.getIntExtra("score",0);
-        txt.setText(temp);
+
+        txt.setText(1);
     }
 }

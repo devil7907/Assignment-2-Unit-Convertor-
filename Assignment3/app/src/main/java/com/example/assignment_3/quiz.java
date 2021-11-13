@@ -88,8 +88,8 @@ public class quiz extends AppCompatActivity  {
     }
 
     private void gotonext() {
-        Intent intent= new Intent(this, quizq2.class);
-        intent.putExtra("value", score);
+        Intent intent= new Intent(quiz.this, quizq2.class);
+        Intent intent1 = intent.putExtra("value", score);
         startActivity(intent);
 
     }
