@@ -11,12 +11,12 @@ import android.widget.Toast;
 
 public class quizq2 extends AppCompatActivity {
     Button goback,nextq, choice1,choice2,choice3 ;
-    TextView txt;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quizq2);
-        txt=findViewById(R.id.textView);
+
 
         choice1=findViewById(R.id.button27);
         choice2=findViewById(R.id.button28);
