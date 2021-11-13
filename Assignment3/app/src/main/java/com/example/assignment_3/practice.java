@@ -62,12 +62,23 @@ public class practice extends AppCompatActivity {
                 gotoq6();
             }
         });
+        practiceq7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoq7();
+            }
+        });
         backbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 goback();
             }
         });
+    }
+
+    private void gotoq7() {
+        Intent intent=new Intent(this,practiceq7.class);
+        startActivity(intent);
     }
 
     private void gotoq6() {
