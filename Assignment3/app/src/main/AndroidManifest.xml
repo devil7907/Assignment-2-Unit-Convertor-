@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Assignment3">
         <activity
+            android:name=".result"
+            android:exported="false" />
+        <activity
+            android:name=".quizq2"
+            android:exported="false" />
+        <activity
             android:name=".practiceq8"
             android:exported="false" />
         <activity

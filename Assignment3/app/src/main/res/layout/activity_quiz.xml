@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="76dp"
         android:layout_marginBottom="56dp"
-        android:text="Quit"
+        android:text="Exit Quiz"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -53,7 +53,7 @@
         android:id="@+id/button7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="cpp"
+        android:text="Tarfiyah"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -79,8 +79,8 @@
         android:layout_height="192dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/qq1"
-        tools:layout_editor_absoluteY="140dp" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:srcCompat="@drawable/qq1" />
 
     <Button
         android:id="@+id/button25"

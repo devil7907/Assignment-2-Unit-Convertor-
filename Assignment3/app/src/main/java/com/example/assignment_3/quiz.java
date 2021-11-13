@@ -2,6 +2,7 @@ package com.example.assignment_3;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,9 +11,9 @@ import android.widget.Toast;
 
 
 public class quiz extends AppCompatActivity  {
-    Button btn1,btn2,btn3,btn4;
-    public question q1=new question();
-    TextView txt;
+    Button btn1,btn2,btn3,btn4,btnback,btnnext;
+
+
     public String ans;
     int qno=0,score=0;
 
@@ -27,46 +28,79 @@ public class quiz extends AppCompatActivity  {
 
         btn1=findViewById(R.id.button4);
         btn2=findViewById(R.id.button5);
-
-
+        btnback=findViewById(R.id.button26);
+        btnnext=findViewById(R.id.button25);
         btn3=findViewById(R.id.button6);
 
+        btnnext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotonext();
+            }
+        });
+        btn4=findViewById(R.id.button7);
+
+        btnback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goback();
+            }
+        });
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                    score=score+1;
+                    Toast.makeText(quiz.this,"Correct",Toast.LENGTH_SHORT).show();
+
+            }
+        });
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                    Toast.makeText(quiz.this,"Wrong",Toast.LENGTH_SHORT).show();
+
+            }
+        });
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(btn2.getText()==ans)
-                {
-                    score=score+1;
-                    //updatescore(score);
-                    updatequestion();
+                 Toast.makeText(quiz.this,"Wrong",Toast.LENGTH_SHORT).show();
 
-                    Toast.makeText(quiz.this,"Correct",Toast.LENGTH_SHORT).show();
-                }else
-                {
+            }
+        });
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
                     Toast.makeText(quiz.this,"Wrong",Toast.LENGTH_SHORT).show();
-                }
+
             }
         });
 
 
-        btn4=findViewById(R.id.button7);
+
 
 
 
     }
 
+    private void gotonext() {
+        Intent intent= new Intent(this, quizq2.class);
+        intent.putExtra("value", score);
+        startActivity(intent);
 
-    public void updatequestion()
-    {
-        txt.setText("waleed");
-        btn1.setText(q1.getchoice1(qno));
-        btn2.setText(q1.getchoice2(qno));
-        btn3.setText(q1.getchoice3(qno));
-        btn4.setText(q1.getchoice4(qno));
-
-        ans=q1.getanswer(qno);
-        qno++;
     }
+
+    private void goback() {
+        Intent intent=new Intent(this,MainActivity.class);
+        startActivity(intent);
+    }
+
+
+
 
 }
 
