@@ -69,12 +69,11 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_practice:
                 Intent intent1 = new Intent(this, practice.class);
                 startActivity(intent1);
-            case R.id.action_result:
-                Intent intent2 = new Intent(this, result.class);
-                startActivity(intent2);
-            default:            // If we got here, the user's action was not recognized.
-                                    // Invoke the superclass to handle it.
-        return super.onOptionsItemSelected(item);   }}
+           
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
 
 
 
