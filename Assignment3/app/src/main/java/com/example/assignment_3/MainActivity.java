@@ -10,6 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -54,45 +55,43 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
     @Override
 
     public boolean onCreateOptionsMenu(Menu menu) {   // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu, menu);
         return true;
     }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_quiz:
-                Intent intent = new Intent(this, quiz.class);
+                Intent intent = new Intent(MainActivity.this, quiz.class);
                 startActivity(intent);
             case R.id.action_practice:
-                Intent intent1 = new Intent(this, practice.class);
-                startActivity(intent1);
-           
+                Toast.makeText(getApplicationContext(), "Practice Clicked", Toast.LENGTH_LONG).show();
+            case R.id.action_result:
+
             default:
                 return super.onOptionsItemSelected(item);
         }
     }
 
 
+    private void gotorgepositry(String s) {
+        Uri Webpage = Uri.parse(s);
+        Intent intent = new Intent(Intent.ACTION_VIEW, Webpage);
+        startActivity(intent);
+    }
 
+    private void gotopractice() {
+        Intent intent1 = new Intent(this, practice.class);
+        startActivity(intent1);
+    }
 
-
-
-            private void gotorgepositry (String s){
-            Uri Webpage = Uri.parse(s);
-            Intent intent = new Intent(Intent.ACTION_VIEW, Webpage);
-            startActivity(intent);
-        }
-
-        private void gotopractice () {
-            Intent intent1 = new Intent(this, practice.class);
-            startActivity(intent1);
-        }
-
-        private void gotoquiz () {
-            Intent intent = new Intent(this, quiz.class);
-            startActivity(intent);
-        }
-        }
+    private void gotoquiz() {
+        Intent intent = new Intent(this, quiz.class);
+        startActivity(intent);
+    }
+}
