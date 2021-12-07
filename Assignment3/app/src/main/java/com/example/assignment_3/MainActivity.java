@@ -61,6 +61,20 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu, menu);
         return true;
     }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.action_quiz:
+                Intent intent = new Intent(this, quiz.class);
+                startActivity(intent);
+            case R.id.action_practice:
+                Intent intent1 = new Intent(this, practice.class);
+                startActivity(intent1);
+            case R.id.action_result:
+                Toast.makeText(getApplicationContext(),"Result Clicked", Toast.LENGTH_SHORT).show();
+            default:            // If we got here, the user's action was not recognized.
+                                    // Invoke the superclass to handle it.
+        return super.onOptionsItemSelected(item);   }}
 
 
 
