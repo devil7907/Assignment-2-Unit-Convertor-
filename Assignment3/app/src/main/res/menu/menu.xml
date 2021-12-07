@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_quiz"
+
+    android:title="@string/action_quiz"
+        app:showAsAction="never"/>
+    <item android:id="@+id/action_practice"
+        android:title="@string/action_practice"
+    app:showAsAction="never"/>
+    <item android:id="@+id/action_result"
+        android:title="@string/action_result"
+        app:showAsAction="never"/>
+
+</menu>
+
+
+

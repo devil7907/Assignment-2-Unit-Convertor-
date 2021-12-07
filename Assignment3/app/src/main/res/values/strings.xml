@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Assignment-3</string>
+    <string name="quiz">Quiz</string>
+    <string name="practice">Practice</string>
+    <string name="action_quiz">quiz</string>
+    <string name="action_practice">practice</string>
+    <string name="action_result">result</string>
 </resources>
