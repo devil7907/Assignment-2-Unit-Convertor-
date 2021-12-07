@@ -100,24 +100,29 @@
         android:id="@+id/textView4"
         android:layout_width="316dp"
         android:layout_height="133dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="92dp"
         android:text="Makhārij Al-Hurūf Practice"
         android:textAlignment="center"
         android:textColor="#4052B5"
         android:textSize="32sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
 
-    <Button
-        android:id="@+id/button17"
-        android:layout_width="159dp"
-        android:layout_height="65dp"
-        android:layout_marginBottom="44dp"
-        android:text="Back"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4154BC"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Makhārij Al-Hurūf"
+        app:titleTextColor="#F1F2F8" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

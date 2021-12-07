@@ -11,39 +11,51 @@
         android:theme="@style/Theme.Design.NoActionBar">
         <activity
             android:name=".result"
+            android:parentActivityName="com.example.assignment_3.MainActivity"
             android:exported="false" />
         <activity
             android:name=".quizq2"
+            android:parentActivityName="com.example.assignment_3.quiz"
             android:exported="false" />
         <activity
             android:name=".practiceq8"
+            android:parentActivityName="com.example.assignment_3.practice"
             android:exported="false" />
         <activity
             android:name=".practiceq7"
+            android:parentActivityName="com.example.assignment_3.practice"
             android:exported="false" />
         <activity
             android:name=".practiceq6"
+            android:parentActivityName="com.example.assignment_3.practice"
             android:exported="false" />
         <activity
             android:name=".practiceq5"
+            android:parentActivityName="com.example.assignment_3.practice"
             android:exported="false" />
         <activity
             android:name=".practiceq4"
+            android:parentActivityName="com.example.assignment_3.practice"
             android:exported="false" />
         <activity
             android:name=".practiceq3"
+            android:parentActivityName="com.example.assignment_3.practice"
             android:exported="false" />
         <activity
             android:name=".practiceq2"
+            android:parentActivityName="com.example.assignment_3.practice"
             android:exported="false" />
         <activity
             android:name=".practiceq1"
+            android:parentActivityName="com.example.assignment_3.practice"
             android:exported="false" />
         <activity
             android:name=".practice"
+            android:parentActivityName="com.example.assignment_3.MainActivity"
             android:exported="false" />
         <activity
             android:name=".quiz"
+            android:parentActivityName="com.example.assignment_3.MainActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

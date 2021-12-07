@@ -1,28 +1,34 @@
 package com.example.assignment_3;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class quizq2 extends AppCompatActivity {
-    Button goback,nextq, choice1,choice2,choice3 ;
-
+    Button nextq, choice1,choice2,choice3 ;
+    Toolbar mytoolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quizq2);
 
+        mytoolbar = findViewById(R.id.toolbar12);
+        setSupportActionBar(mytoolbar);
+
+        ActionBar ab=getSupportActionBar();
+        ab.setDisplayHomeAsUpEnabled(true);
 
         choice1=findViewById(R.id.button27);
         choice2=findViewById(R.id.button28);
         choice3=findViewById(R.id.button29);
 
-        goback=findViewById(R.id.button31);
+
         nextq=findViewById(R.id.button30);
 
         choice1.setOnClickListener(new View.OnClickListener() {
@@ -46,12 +52,7 @@ public class quizq2 extends AppCompatActivity {
                 Toast.makeText(quizq2.this,"Wrong",Toast.LENGTH_SHORT).show();
             }
         });
-        goback.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-               gobck();
-            }
-        });
+
         nextq.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -70,8 +71,5 @@ public class quizq2 extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private void gobck() {
-        Intent intent=new Intent(this,MainActivity.class);
-        startActivity(intent);
-    }
+
 }

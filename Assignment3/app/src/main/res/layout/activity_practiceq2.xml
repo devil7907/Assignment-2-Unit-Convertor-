@@ -10,18 +10,22 @@
         android:id="@+id/imageView3"
         android:layout_width="375dp"
         android:layout_height="278dp"
+        android:layout_marginTop="136dp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar4"
         app:srcCompat="@drawable/q2"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="119dp" />
+        tools:layout_editor_absoluteX="18dp" />
 
-    <Button
-        android:id="@+id/button18"
-        android:layout_width="123dp"
-        android:layout_height="67dp"
-        android:layout_marginBottom="204dp"
-        android:text="Back"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4154BC"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.934"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Makhārij Al-Hurūf"
+        app:titleTextColor="#F1F2F8" />
 </androidx.constraintlayout.widget.ConstraintLayout>

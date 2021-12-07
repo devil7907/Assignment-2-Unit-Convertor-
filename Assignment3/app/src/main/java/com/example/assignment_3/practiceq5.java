@@ -1,6 +1,8 @@
 package com.example.assignment_3;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,23 +10,20 @@ import android.view.View;
 import android.widget.Button;
 
 public class practiceq5 extends AppCompatActivity {
-    Button btnback;
+    Toolbar mytoolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_practiceq5);
 
-        btnback=findViewById(R.id.button21);
-        btnback.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                goback();
-            }
-        });
+        mytoolbar = findViewById(R.id.toolbar7);
+        setSupportActionBar(mytoolbar);
+
+        ActionBar ab=getSupportActionBar();
+        ab.setDisplayHomeAsUpEnabled(true);
+
+
     }
 
-    private void goback() {
-        Intent intent=new Intent(this,practice.class);
-        startActivity(intent);
-    }
+
 }

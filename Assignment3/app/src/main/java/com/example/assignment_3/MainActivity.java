@@ -10,7 +10,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -71,7 +70,8 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent1 = new Intent(this, practice.class);
                 startActivity(intent1);
             case R.id.action_result:
-                Toast.makeText(getApplicationContext(),"Result Clicked", Toast.LENGTH_SHORT).show();
+                Intent intent2 = new Intent(this, result.class);
+                startActivity(intent2);
             default:            // If we got here, the user's action was not recognized.
                                     // Invoke the superclass to handle it.
         return super.onOptionsItemSelected(item);   }}
